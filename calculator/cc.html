@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<title>Calculator</title>
+		<link rel="stylesheet" href="cc.css">
+	</head>
+	<body>
+		<div id='container'>
+			<div id="res"></div>
+			<div id='btns' class='buttonContainer'>
+				<button id='b1' class 'buttonClass' onclick="c1()">1</button>
+				<button id='b2' class 'buttonClass' onclick="c2()">2</button>
+				<button id='b3' class 'buttonClass' onclick="c3()">3</button>
+				<button id='a' class 'buttonClass' onclick="ca()">+</button>
+			</div>
+			<div id='btns' class='buttonContainer'>
+				<button id='b4' class 'buttonClass' onclick="c4()">4</button>
+				<button id='b5' class 'buttonClass' onclick="c5()">5</button>
+				<button id='b6' class 'buttonClass' onclick="c6()">6</button>
+				<button id='s' class 'buttonClass' onclick="cs()">-</button>
+			</div>
+			<div id='btns' class='buttonContainer'>
+				<button id='b7' class 'buttonClass' onclick="c7()">7</button>
+				<button id='b8' class 'buttonClass' onclick="c8()">8</button>
+				<button id='b9' class 'buttonClass' onclick="c9()">9</button>
+				<button id='m' class 'buttonClass' onclick="cm()">*</button>
+			</div>
+			<div id='btns' class='buttonContainer'>
+				<button id='b0' class 'buttonClass' onclick="c0()">0</button>
+				<button id='c' class 'buttonClass' onclick="cc()">C</button>
+				<button id='e' class 'buttonClass' onclick="ce()">=</button>
+				<button id='d' class 'buttonClass' onclick="cd()">/</button>
+			</div>
+		</div>
+		<script>
+			let e=document.getElementById("res")
+			let f;
+			let c;
+			let g;
+			function c0(){
+			e.innerHTML+='0';
+			}
+			function c1(){
+			e.innerHTML+='1';
+			}
+			function c2(){
+			e.innerHTML+='2';
+			}
+			function c3(){
+			e.innerHTML+='3';
+			}
+			function c4(){
+			e.innerHTML+='4';
+			}
+			function c5(){
+			e.innerHTML+='5';
+			}
+			function c6(){
+			e.innerHTML+='6';
+			}
+			function c7(){
+			e.innerHTML+='7';
+			}
+			function c8(){
+			e.innerHTML+='8';
+			}
+			function c9(){
+			e.innerHTML+='9';
+			}
+			function ca(){
+			e.innerHTML+='+';
+			}
+			function cs(){
+			e.innerHTML+='-';
+			}
+			function cm(){
+			e.innerHTML+='*';
+			}
+			function cd(){
+			e.innerHTML+='/';
+			}
+			function cc(){
+			e.innerHTML='';
+			}
+			function ce(){
+			e.innerHTML=eval(e.innerHTML);
+			}
+		</script>
+	</body>
+</html>

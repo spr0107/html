@@ -1,0 +1,28 @@
+body {
+  width: 50%;
+}
+
+#res {
+  background-color: lightgray;
+  border: solid;
+  height: 48px;
+  font-size: 20px;
+}
+
+#btns button {
+  width: 25%;
+  height: 38px;
+  font-size: 18px;
+  margin:0;
+  float: left;
+}
+
+#b0, #b1,#b2 , #b3 , #b4  ,#b5 , #b6 , #b7 , #b8,  #b9 {
+  background-color: lightgreen;
+  color: brown;
+}
+
+#c, #e ,#a, #s, #m, #d {
+  background-color: darkgreen;
+  color: white;
+}
